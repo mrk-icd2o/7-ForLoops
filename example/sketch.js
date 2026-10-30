@@ -23,13 +23,14 @@ function draw() {
   // initial value; condition; pattern
   fill(255);
   for (let xValue = 50; xValue <= 650; xValue += 150) {
+    fill(xValue / 650 * 255);
     rect(xValue, 350, 100, 100);
   }
 
   
 
   // what is wrong with this loop?
-  for (let xValue = 50; xValue > 650; xValue += 150) {
+  for (let xValue = 650; xValue > 0; xValue -= 150) {
     ellipse(xValue, 500, 50, 50);
   }
 }
